@@ -1,7 +1,85 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RebelWorks - CTO-as-a-Service</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="shortcut icon" href="flat-ui/images/favicon.ico">
+		<link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="flat-ui/css/flat-ui.css">
+		<!-- Using only with Flat-UI (free)-->
+		<link rel="stylesheet" href="common-files/css/icon-font.css">
+		<!-- end -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<section class="header-10-sub v-center bg-midnight-blue">
+				<div class="background">
+					&nbsp;
+				</div>
+				<div>
+					<div class="container">
+						<div class="comingsoon">
+							COMING SOON
+						</div>
+						<div class="hero-unit hero-unit-bordered">
+							<h1>REBELWORKS</h1>
+						</div>
+						<div class="message">
+							<h5>
+								RebelWorks is a CTO-as-a-service company created <br />to help entrepreneurs expedite the development of their ideas.
+							</h5>
+							<p style="color:#7f8c8d">
+								We know it is ironic that our website is coming soon and a website is important! However as Mahatma Gandhi once said <br >"Action expresses priorities" and at RebelWorks, our priority is our clients.  Our website will be made once our clients are happy.
+							</p>
+							<p>
+								We would love to tell you more about what we do in person. Get in touch with us and let's grab coffee.
+								<br /><br /><button id="myBtn" class="btn btn-lg btn-primary" style="padding-left: 40px;padding-right: 40px;">Get In Touch</button>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+	
+	<!-- Modal content -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+			<form id="contact-form" name="contact-form" method="post" action="http://formspree.io/yourfriends+web@rebelworks.co"> 
+				<fieldset>
+					<div class="form-group"><input id="name" class="form-control" type="text" name="name" placeholder="Name"></div>
+					<div class="form-group"><input id="email" class="form-control" type="text" name="_replyto" placeholder="Email address"></div>
+					<div class="form-group"><textarea id="message" class="form-control" name="message" rows="7" cols="25" placeholder="Message"></textarea></div>
+					<div class="form-group"><input type="text" name="_gotcha" style="display:none" /></div>
+					<div class="form-group"><input type="text" name="_next" style="display:none" value="//rebelworks.co/thanks.html" /></div>
+					<div class="form-group"><input id="submit" class="btn btn-block btn-lg btn-primary" type="submit" name="submit" value="Send!"></div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
 </html>
+
+<script type="text/javascript">
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+		if (event.target == modal) {
+		    modal.style.display = "none";
+		}
+	}
+</script>
